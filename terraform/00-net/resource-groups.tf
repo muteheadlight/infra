@@ -11,3 +11,8 @@ resource "azurerm_resource_group" "functions" {
   name     = "function-dev"
   location = var.location
 }
+
+resource "azurerm_resource_group" "logging" {
+  name     = "rg-logging"
+  location = var.location
+}
