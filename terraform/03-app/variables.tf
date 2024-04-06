@@ -7,3 +7,6 @@ variable "enable_insights" {
   default     = false
 }
 
+variable "region" {
+  default = "canadaeast"
+}

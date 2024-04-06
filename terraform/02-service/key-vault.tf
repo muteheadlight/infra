@@ -16,6 +16,6 @@ resource "azurerm_key_vault" "fch" {
   network_acls {
     default_action = "Deny"
     bypass         = "AzureServices"
+    ip_rules       = flatten([["71.162.200.64"], local.layer_01_out.canadaeast_ip_list])
   }
-
 }
